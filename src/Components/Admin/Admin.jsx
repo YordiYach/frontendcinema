@@ -9,7 +9,7 @@ const Admin = () => {
     const [movies, setMovies] = useState([]);
 
     useEffect(() => {
-        axios.get('http://localhost:4000/getmovies')
+        axios.get('https://hollicine.onrender.com/getmovies')
             .then(response => {
                 setMovies(response.data);
                 console.log(response.data)
