@@ -11,7 +11,7 @@ const Header = () => {
 
     useEffect(() => {
         if (token) {
-            axios.get(`http://localhost:4000/user`, {
+            axios.get(`https://hollicine.onrender.com/user`, {
                 headers: {
                     token: token
                 }
