@@ -50,7 +50,7 @@ const Register = () => {
             }
             setLoading(true);
             await axios
-                .post("http://localhost:4000/register", Usuario)
+                .post("https://hollicine.onrender.com/register", Usuario)
                 .then(({ data }) => {
                     setMensaje(data.mensaje);
                     setInputs({
