@@ -36,7 +36,7 @@ const AddMovieForm = () => {
             }
             setLoading(true);
             await axios
-                .post("http://localhost:4000/addmovie", Movie)
+                .post("https://hollicine.onrender.com/addmovie", Movie)
                 .then(({ data }) => {
                     setMensaje(data.mensaje);
                     setInputs({ nombre: "", url: "", costo: "" })
