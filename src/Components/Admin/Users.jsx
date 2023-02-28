@@ -7,7 +7,7 @@ const Users = () => {
 
     useEffect(() => {
         const fetchUsers = async () => {
-            const response = await axios.get('http://localhost:4000/users');
+            const response = await axios.get('https://hollicine.onrender.com/users');
             setUsers(response.data);
         };
         fetchUsers();
