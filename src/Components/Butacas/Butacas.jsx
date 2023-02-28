@@ -66,7 +66,7 @@ function AsientosCine({ precio, pel }) {
         try {
             if (token) {
                 axios
-                    .post("http://localhost:4000/factura", datos)
+                    .post("https://hollicine.onrender.com/factura", datos)
                     .then(({ data }) => {
                         setMensaje(data.mensaje);
                         setTimeout(() => {
