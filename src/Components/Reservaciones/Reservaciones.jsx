@@ -9,7 +9,7 @@ const Reservaciones = () => {
 
     useEffect(() => {
         const fetchfacturas = async () => {
-            const response = await axios.get('http://localhost:4000/getfacturas');
+            const response = await axios.get('https://hollicine.onrender.com/getfacturas');
             setFacturas(response.data);
         };
         fetchfacturas();
